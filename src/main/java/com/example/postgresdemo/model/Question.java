@@ -23,5 +23,20 @@ public class Question extends AuditModel {
     @Column(columnDefinition = "text")
     private String description;
 
-    // Getters and Setters (Omitted for brevity)
+    
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public String getDescription(){
+        return description;
+    }
 }

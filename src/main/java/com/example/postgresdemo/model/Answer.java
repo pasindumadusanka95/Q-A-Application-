@@ -26,5 +26,20 @@ public class Answer extends AuditModel {
     @JsonIgnore
     private Question question;
 
+    public void setText(String text){
+        this.text = text;
+    }
+
+    public String getText(){
+        return text;
+    }
+
+    public void setQuestion(Question question){
+        this.question = question;
+    }
+
+    public Question getQuestion(){
+        return question;
+    }
     // Getters and Setters (Omitted for brevity)
 }
